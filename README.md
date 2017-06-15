@@ -9,11 +9,11 @@ This is a Twitter bot for myself which tweets science articles, GIFs, infographi
 
 
 ## HOW TO USE:
-1. Install the tweepy and praw python 3 modules:
+1. Install the tweepy, bs4, and praw python 3 modules:
 
 `sudo apt install python3-pip`
 
-`sudo python3 -m pip install tweepy praw`
+`sudo python3 -m pip install tweepy bs4 praw`
 
 2. Setups to tweet an .mp4 video:
 The Tweepy module cannot tweet .mp4 videos by default, it must be modified
