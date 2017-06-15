@@ -38,7 +38,9 @@ Maybe in the future I will implement a different API: replace Tweepy with Twytho
 4. Make sure you add the correct Reddit credentials in the Keys.py file.
 5. Change the SleepTime in the Sari.py script to control when different tweets come out (default is 3600 or 1 hour between tweets).
 6. Set time of day to start tweeting:
+
 `crontab -e`
+
 `00 15 * * * python3 Sari.py >> Twitter.log 2>&1`
 
 
