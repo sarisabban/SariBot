@@ -3,7 +3,7 @@
 import time , datetime , tweepy , praw , urllib.request , requests , random , os
 
 #Twitter And Reddit Credentials Are Found in the File Keys.py
-#from Keys import *
+from Keys import *
 
 #Sleep Time (in seconds) Between Tweets:
 SleepTime = 3600
@@ -24,9 +24,9 @@ print(Green + '███████╗ █████╗ ██████╗
 print(Blue + '---------------------------------------------------------' + Cancel)
 
 #Connect to Twitter using the credentials:
-#auth = tweepy.OAuthHandler(consumer_key , consumer_secret)
-#auth.set_access_token(access_token , access_token_secret)
-#api = tweepy.API(auth)
+auth = tweepy.OAuthHandler(consumer_key , consumer_secret)
+auth.set_access_token(access_token , access_token_secret)
+api = tweepy.API(auth)
 print(Yellow + '[+] Connected To Twitter' + Cancel)
 #-------------------------------------------------------------------------------------------------------------------------------
 def Reddit(Topic , NumberOfTopics):
