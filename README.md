@@ -41,7 +41,7 @@ Maybe in the future I will implement a different API: replace Tweepy with Twytho
 
 `crontab -e`
 
-`00 20 * * * python3 Sari.py >> Sari_Log 2>&1`
+`00 19 * * * python3 Sari.py >> Sari_Log 2>&1`
 
 
 
