@@ -61,6 +61,7 @@ auth = tweepy.OAuthHandler(consumer_key , consumer_secret)
 auth.set_access_token(access_token , access_token_secret)
 api = tweepy.API(auth)
 print(Yellow + '[+] Connected To Twitter' + Cancel)
+print(Yellow + '[+] Date:' , datetime.datetime.now().strftime('%d %B %Y @ %H:%M') + Cancel)
 #-------------------------------------------------------------------------------------------------------------------------------
 def Reddit(Topic , NumberOfTopics):
 	'''Uses the Reddit API (praw) to parse Reddit, goes to the spesified topic's page, get the top spesified number of articles and then gives back a random article's URL link and its title. Returns a tuple.'''
@@ -123,8 +124,6 @@ def TweetMedia(TheFile , Extention , Hashtag):
 			print(Cancel)
 			continue
 #-------------------------------------------------------------------------------------------------------------------------------
-print(Yellow + '[+] Date:' , datetime.datetime.now().strftime('%d %B %Y @ %H:%M') + Cancel)
-
 #1. Science Articles:
 Article = Reddit('science' , 20) ; Tweet(Article[0] , Article[1] , '#علوم') ; time.sleep(SleepTime)
 
